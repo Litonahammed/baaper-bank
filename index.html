@@ -6,66 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functional baap er bank</title>
-    <script src="https://cdn.tailwindcss.com"></script
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
-    <header><h1 class="text-5xl text-center mt-10">  
-    Lets get some <span class="font-bold text-violet-600">Mooooooneyyyy</span>!!!</h1>
-</header>
-<main>
-    <section class="mt-12">
-        <div class="grid grid-cols-3 gap-4  w-9/12 mx-auto text-white">
 
-            <div class="bg-green-400  p-8 rounded-xl">
-                <h4 class="text-2xl">Deposite</h4>
+    <header>
+        <h1 class="text-5xl text-center mt-10">
+            Lets get some <span class="font-bold text-violet-600">Mooooooneyyyy</span>!!!</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4  w-9/12 mx-auto text-white">
 
-                <h3 class="text-5xl"> $ 00</h3>
+                <div class="bg-green-400  p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+
+                    <h3 class="text-5xl"> $ <span id="withdraw-total">00</span> </h3>
+                </div>
+
+
+
+                <div class="bg-yellow-400  p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposite</h4>
+                    <h3 class="text-5xl font-medium"> $ <span id="deposite-total">00</span></h3>
+                </div>
+
+
+
+                <div class="bg-violet-400  p-8 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h3 class="text-5xl"> $ <span id="balance-total">1240</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw -->
+
+
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4  w-9/12 mx-auto text-blue">
+
+                <div class="bg-fuchsia-400  p-8 rounded-xl">
+                    <h4 class="text-2xl">Your Deposite</h4>
+                    <input id="deposite-Field" class="w-9/12 block mb-2 px-3" type="text" name=""
+                        placeholder="$ Amount you want to Deposite ">
+
+                    <button id="btn-deposite"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Deposite</button>
+                </div>
+
+
+
+                <div class="bg-sky-400  p-8 rounded-xl">
+                    <h4 class="text-2xl">Your Withdraw</h4>
+                    <input id="withdraw-field" class="w-9/12 block mb-2 px-3" type="text" name=""
+                        placeholder="$ Amount you want to Withdraw  ">
+
+                    <button id="btn-withdraw"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
+                </div>
+
             </div>
 
-
-
-            <div class="bg-yellow-400  p-8 rounded-xl">
-                <h4 class="text-2xl">Deposite</h4>
-                <h3 class="text-5xl font-medium"> $ <span id="deposite-total">00</span></h3>
-            </div>
-
-
-
-            <div class="bg-violet-400  p-8 rounded-xl">
-                <h4 class="text-2xl">Deposite</h4>
-                <h3 class="text-5xl"> $1240</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deposit and Withdraw -->
-
-
-    <section class="mt-12">
-        <div class="grid grid-cols-2 gap-4  w-9/12 mx-auto text-blue">
-
-            <div class="bg-fuchsia-400  p-8 rounded-xl">
-                <h4 class="text-2xl">Your  Deposite</h4>
-                <input id="deposite-Field" class="w-9/12 block mb-2 px-3" type="text" name="" placeholder="$ Amount you want to Deposite ">
-            
-            <button id="btn-deposite" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Deposite</button>
-            </div>
-
-
-
-            <div class="bg-sky-400  p-8 rounded-xl">
-                <h4 class="text-2xl">Your Withdraw</h4>
-                <input class="w-9/12 block mb-2 px-3" type="email" name="" id="user-email" placeholder="Your Email address ">
-                
-        <button id="btn-withraw" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
-            </div>
-            
-        </div>
-
-    </section>
-</main>
-<script src="javascript/deposite.js"></script>
-    </body>
+        </section>
+    </main>
+    <script src="javascript/deposite.js"></script>
+    <script src="javascript/withdraw.js"></script>
+</body>
 
 </html>

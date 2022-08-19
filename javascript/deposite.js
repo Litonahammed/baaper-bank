@@ -1,3 +1,11 @@
+// 1. add event listener to the deposite button
+// 2. get deposite amount fromthe input field
+// 2.5: convert string deposite amount to a number type.
+// 3. clear the deposite input feild after getting the value.
+// 4. get the previouse deposite  total.
+// 5. calaculate new deposite total and set the value. ]
+// 6. get the current balance total.  
+// 7. calculate the new balane and set it to the balance total amount
 
 
 
